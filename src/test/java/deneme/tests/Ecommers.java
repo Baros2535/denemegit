@@ -1,9 +1,29 @@
 package deneme.tests;
 
-import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 
 public class Ecommers {
+        WebDriver driver;
 
-//beforeMethod olusturma
+
+        //BeforeClass Olusturma
+
+    @BeforeClass
+    public void setUp(){
+        WebDriverManager.chromedriver().setup();
+        driver= new ChromeDriver();
+    }
+      @BeforeMethod
+    public void test2(){
+        driver.get("http://automationpractice.com/index.php");
+
+      }
+
+
+
 
 }
