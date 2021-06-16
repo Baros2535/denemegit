@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 
 public class Ecommers {
 
+        //BeforeClass Olusturma
+
 
 
 }
